@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sxh.usercenter.Mapper.ApplyMapper">
+
+    <resultMap id="BaseResultMap" type="com.sxh.usercenter.Model.domain.Apply">
+            <id property="applyId" column="applyId" jdbcType="INTEGER"/>
+            <result property="applyAccount" column="applyAccount" jdbcType="VARCHAR"/>
+            <result property="applyName" column="applyName" jdbcType="VARCHAR"/>
+            <result property="applyMajor" column="applyMajor" jdbcType="VARCHAR"/>
+            <result property="applyClass" column="applyClass" jdbcType="TINYINT"/>
+            <result property="applyStart" column="applyStart" jdbcType="VARCHAR"/>
+            <result property="applyEnd" column="applyEnd" jdbcType="VARCHAR"/>
+            <result property="applyDay" column="applyDay" jdbcType="INTEGER"/>
+            <result property="applyTime" column="applyTime" jdbcType="VARCHAR"/>
+            <result property="applyReason" column="applyReason" jdbcType="VARCHAR"/>
+            <result property="applyTeacher" column="applyTeacher" jdbcType="VARCHAR"/>
+            <result property="applyStatus" column="applyStatus" jdbcType="TINYINT"/>
+            <result property="applyApprovalTime" column="applyApprovalTime" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        applyId,applyAccount,applyName,
+        applyMajor,applyClass,applyStart,
+        applyEnd,applyDay,applyTime,
+        applyReason,applyTeacher,applyStatus,
+        applyApprovalTime
+    </sql>
+</mapper>

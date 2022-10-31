@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sxh.usercenter.Mapper.SummaryMapper">
+
+    <resultMap id="BaseResultMap" type="com.sxh.usercenter.Model.domain.Summary">
+            <id property="leaveAccount" column="leaveAccount" jdbcType="VARCHAR"/>
+            <result property="leaveName" column="leaveName" jdbcType="VARCHAR"/>
+            <result property="leaveCount" column="leaveCount" jdbcType="INTEGER"/>
+            <result property="leaveTotalDays" column="leaveTotalDays" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        leaveAccount,leaveName,leaveCount,
+        leaveTotalDays
+    </sql>
+</mapper>

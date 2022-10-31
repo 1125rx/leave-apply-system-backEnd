@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sxh.usercenter.Mapper.EmailMapper">
+
+    <resultMap id="BaseResultMap" type="com.sxh.usercenter.Model.domain.Email">
+            <id property="e_account" column="e_account" jdbcType="VARCHAR"/>
+            <result property="e_email" column="e_email" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        e_account,e_email
+    </sql>
+</mapper>
